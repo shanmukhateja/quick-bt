@@ -1,13 +1,12 @@
+from subprocess import Popen
+import os.path
+import pathlib
 
-def say_hello(systray):
-    print("Hello, World!")
+SCRIPT_PATH = os.path.join('src/bt.ps1')
 
-def hello(sysTrayIcon):
-    print("Hello World.")
-def simon(sysTrayIcon):
-    print("Hello Simon.")
-def bye(sysTrayIcon):
-    print('Bye, then.')
 
-def do_nothing(sysTrayIcon):
-    pass
+def turn_on(systray):
+    Popen(args=['powershell.exe', '-File', SCRIPT_PATH, '-BluetoothStatus', 'on'], shell=True)
+
+def turn_off(systray):
+    Popen(['powershell.exe', '-File', SCRIPT_PATH, '-BluetoothStatus', 'off'])
