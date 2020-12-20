@@ -23,6 +23,12 @@ on Windows 10 laptop.
 - Windows executables will be available in near future.
 - If it doesn't work, try running script in an elevated prompt (run `cmd` as admin).
 
+# Screenshots
+
+![](https://i.ibb.co/rmtmL9n/ss3.png)
+
+![](https://i.ibb.co/RT5sfJd/ss2.png)
+
 
 ## Credits
 
