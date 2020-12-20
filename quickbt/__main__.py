@@ -1,13 +1,6 @@
 from infi.systray import SysTrayIcon
 from quickbt.actions.actions import *
-
-# Constants
-TITLE_APP = "Quick BT"
-TITLE_BT_ON = "Turn Bluetooth On"
-TITLE_BT_OFF = "Turn Bluetooth Off"
-
-ICON_APP = "./icons/bluetooth.ico"
-
+from quickbt.constants import *
 
 def init():
   # Context menu actions

@@ -1,7 +1,5 @@
 from subprocess import Popen
-import os.path
-
-SCRIPT_PATH = os.path.join('quickbt/bt.ps1')
+from quickbt.constants import PS_SCRIPT_PATH
 
 
 def turn_on(systray):
@@ -12,4 +10,4 @@ def turn_off(systray):
 
 
 def _action(state = 'on'):
-    Popen(['powershell.exe', '-File', SCRIPT_PATH, '-BluetoothStatus', state], shell=True)
+    Popen(['powershell.exe','-WindowStyle','Hidden', '-File', PS_SCRIPT_PATH, '-BluetoothStatus', state], shell=True)
