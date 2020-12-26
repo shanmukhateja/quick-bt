@@ -6,24 +6,33 @@ on Windows 10 laptop.
 
 ## Usage
 
-### Steps:
+1. Download the latest release [here](https://github.com/shanmukhateja/quick-bt/releases).
 
-- Install [Python 3](https://python.org/) 
+2. Extract zip file, right-click on quick-bt.exe and select "Create Shortcut".
 
-- Clone this repository, open `cmd` and navigate to the project.
+3. With the file location open, press the Windows logo key  + R, type `shell:startup`, then select OK. This opens the Startup folder.
 
-- Need to install [infi.systray](https://github.com/Infinidat/infi.systray) by running:
+4. Copy and paste the shortcut to the app from the file location to the Startup folder.
 
-     `pip install infi.systray --user`
+## Development
 
-- Launch `src\main.py`
+- Install [Python 3.8.x](https://python.org/) 
+
+- Clone this repository, open `cmd` on the project directory.
+
+- Install dependencies by running:
+
+     `pip install infi.systray cx_freeze --user`
+
+- Run `python.exe -m quickbt` inside project directory.
 
 ### Note:
 
-- Windows executables will be available in near future.
+- Windows x64 binaries are available now. Click [here](https://github.com/shanmukhateja/quick-bt/releases).
+
 - If it doesn't work, try running script in an elevated prompt (run `cmd` as admin).
 
-# Screenshots
+## Screenshots
 
 ![](https://i.ibb.co/rmtmL9n/ss3.png)
 
@@ -34,3 +43,4 @@ on Windows 10 laptop.
 
 - [infi.systray](https://github.com/Infinidat/infi.systray)
 - [BT script from SuperUser](https://superuser.com/a/1293303)
+- [Flat Icon](https://flaticon.com)
