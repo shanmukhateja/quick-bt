@@ -20,7 +20,3 @@ ICON_APP = os.path.join(BASE_PATH, 'icons/bluetooth.ico')
 
 # Poweshell script
 PS_SCRIPT_PATH = os.path.join(BASE_PATH, 'quickbt/bt.ps1')
-
-x = open('D:\\file.txt', 'w')
-x.write(BASE_PATH+ '\n')
-x.close()
