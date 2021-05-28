@@ -1,13 +1,17 @@
-from subprocess import Popen
-from quickbt.constants import PS_SCRIPT_PATH
-
+import asyncio
+from winrt.windows.devices import radios
 
 def turn_on(systray):
-    _action()
+    asyncio.run(_action())
 
 def turn_off(systray):
-    _action('off')
+    asyncio.run(_action(False))
 
-
-def _action(state = 'on'):
-    Popen(['powershell.exe','-WindowStyle','Hidden', '-File', PS_SCRIPT_PATH, '-BluetoothStatus', state], shell=True)
+async def _action(power_state = True):
+    all_radios = await radios.Radio.get_radios_async()
+    for this_radio in all_radios:
+        if this_radio.kind == radios.RadioKind.BLUETOOTH:
+            if power_state:
+                result = await this_radio.set_state_async(radios.RadioState.ON)
+            else:
+                result = await this_radio.set_state_async(radios.RadioState.OFF)

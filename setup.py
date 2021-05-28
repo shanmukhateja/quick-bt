@@ -7,7 +7,7 @@ build_exe_options = {
     "excludes": ["tkinter"],
     "include_msvcr": True,
     "build_exe": "dist",
-    "include_files": ["./icons", ("quickbt/bt.ps1", "quickbt/bt.ps1")]
+    "include_files": ["./icons"]
 }
 
 # GUI applications require a different base on Windows (the default is for a

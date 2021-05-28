@@ -12,4 +12,5 @@ def init():
   systray = SysTrayIcon(ICON_APP, TITLE_APP, menu_options)
   systray.start()
 
-init()
+if __name__ == '__main__':
+  init()
