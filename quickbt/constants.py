@@ -1,7 +1,5 @@
 import os.path
 
-
-
 # Strings
 TITLE_APP = "Quick BT"
 TITLE_BT_ON = "Turn Bluetooth On"
