@@ -17,7 +17,7 @@ if sys.platform == "win32":
     base = "Win32GUI"
 
 setup(name="Quick BT",
-      version="1.1",
+      version="2.0",
       description="Toggle BT device from system tray icon",
       options={"build_exe": build_exe_options},
       executables=[Executable("quickbt/__main__.py",targetName="quick-bt", base=base, icon="./icons/bluetooth.ico")])
