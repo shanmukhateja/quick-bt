@@ -22,15 +22,13 @@ on Windows 10 laptop.
 
 - Install dependencies by running:
 
-     `pip install infi.systray cx_freeze --user`
+     `pip install -r requirements.txt`
 
 - Run `python.exe -m quickbt` inside project directory.
 
 ### Note:
 
 - Windows x64 binaries are available now. Click [here](https://github.com/shanmukhateja/quick-bt/releases).
-
-- If it doesn't work, try running script in an elevated prompt (run `cmd` as admin).
 
 ## Screenshots
 
@@ -42,5 +40,5 @@ on Windows 10 laptop.
 ## Credits
 
 - [infi.systray](https://github.com/Infinidat/infi.systray)
-- [BT script from SuperUser](https://superuser.com/a/1293303)
+- [WinRT](https://pypi.org/project/winrt/)
 - [Flat Icon](https://flaticon.com)
